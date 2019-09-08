@@ -1,0 +1,1 @@
+{"orders": [{"order_id": 10738, "pickup_point_id": 40738, "pickup_from": 0, "pickup_to": 30, "pickup_location_x": 138, "pickup_location_y": 279, "dropoff_point_id": 60738, "dropoff_from": 570, "dropoff_to": 600, "dropoff_location_x": 194, "dropoff_location_y": 166, "payment": 670}], "depots": [], "couriers": []}
