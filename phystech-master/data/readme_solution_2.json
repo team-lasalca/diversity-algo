@@ -1,0 +1,26 @@
+[
+  {
+    "courier_id": 1,
+    "action": "pickup",
+    "order_id": 20001,
+    "point_id": 40001
+  },
+  {
+    "courier_id": 1,
+    "action": "pickup",
+    "order_id": 20002,
+    "point_id": 40002
+  },
+  {
+    "courier_id": 1,
+    "action": "dropoff",
+    "order_id": 20002,
+    "point_id": 60002
+  },
+  {
+    "courier_id": 1,
+    "action": "dropoff",
+    "order_id": 20001,
+    "point_id": 60001
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "couriers": [
+    {
+      "courier_id": 1,
+      "location_x": 20,
+      "location_y": 20
+    }
+  ],
+  "depots" : [],
+  "orders": [
+    {
+      "order_id": 20001,
+      "pickup_point_id": 40001,
+      "pickup_location_x": 10,
+      "pickup_location_y": 40,
+      "pickup_from": 420,
+      "pickup_to": 600,
+      "dropoff_point_id": 60001,
+      "dropoff_location_x": 10,
+      "dropoff_location_y": 90,
+      "dropoff_from": 480,
+      "dropoff_to": 660,
+      "payment": 500
+    },
+    {
+      "order_id": 20002,
+      "pickup_point_id": 40002,
+      "pickup_location_x": 60,
+      "pickup_location_y": 100,
+      "pickup_from": 480,
+      "pickup_to": 600,
+      "dropoff_point_id": 60002,
+      "dropoff_location_x": 100,
+      "dropoff_location_y": 100,
+      "dropoff_from": 360,
+      "dropoff_to": 660,
+      "payment": 900
+    }
+  ]
+}

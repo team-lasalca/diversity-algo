@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "courier_id",
+      "action",
+      "order_id",
+      "point_id"
+    ],
+    "properties": {
+      "courier_id": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10000
+      },
+      "action": {
+        "type": "string",
+        "enum": [
+          "pickup",
+          "dropoff"
+        ]
+      },
+      "order_id": {
+        "type": "integer",
+        "minimum": 10001,
+        "maximum": 30000
+      },
+      "point_id": {
+        "type": "integer",
+        "minimum": 30001,
+        "maximum": 80000
+      }
+    }
+  }
+}

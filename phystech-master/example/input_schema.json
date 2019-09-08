@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "couriers",
+    "depots",
+    "orders"
+  ],
+  "properties": {
+    "couriers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "courier_id",
+          "location_x",
+          "location_y"
+        ],
+        "properties": {
+          "courier_id": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "location_x": {
+            "type": "integer"
+          },
+          "location_y": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "depots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "point_id",
+          "location_x",
+          "location_y"
+        ],
+        "properties": {
+          "point_id": {
+            "type": "integer",
+            "minimum": 30001,
+            "maximum": 40000
+          },
+          "location_x": {
+            "type": "integer"
+          },
+          "location_y": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "order_id",
+          "pickup_point_id",
+          "pickup_from",
+          "pickup_to",
+          "pickup_location_x",
+          "pickup_location_y",
+          "dropoff_point_id",
+          "dropoff_from",
+          "dropoff_to",
+          "dropoff_location_x",
+          "dropoff_location_y",
+          "payment"
+        ],
+        "properties": {
+          "order_id": {
+            "type": "integer",
+            "minimum": 10001,
+            "maximum": 30000
+          },
+          "pickup_point_id": {
+            "type": "integer",
+            "minimum": 40001,
+            "maximum": 60000
+          },
+          "pickup_from": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1439
+          },
+          "pickup_to": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1439
+          },
+          "pickup_location_x": {
+            "type": "integer"
+          },
+          "pickup_location_y": {
+            "type": "integer"
+          },
+          "dropoff_point_id": {
+            "type": "integer",
+            "minimum": 60001,
+            "maximum": 80000
+          },
+          "dropoff_from": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1439
+          },
+          "dropoff_to": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1439
+          },
+          "dropoff_location_x": {
+            "type": "integer"
+          },
+          "dropoff_location_y": {
+            "type": "integer"
+          },
+          "payment": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  }
+}

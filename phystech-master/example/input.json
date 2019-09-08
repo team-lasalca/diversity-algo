@@ -1,0 +1,65 @@
+{
+  "couriers": [
+    {
+      "courier_id": 1,
+      "location_x": 2,
+      "location_y": 2
+    },
+    {
+      "courier_id": 2,
+      "location_x": 5,
+      "location_y": 13
+    }
+  ],
+  "depots": [
+    {
+      "point_id": 30001,
+      "location_x": 6,
+      "location_y": 8
+    }
+  ],
+  "orders": [
+    {
+      "order_id": 10001,
+      "pickup_point_id": 40001,
+      "pickup_location_x": 3,
+      "pickup_location_y": 4,
+      "pickup_from": 360,
+      "pickup_to": 1380,
+      "dropoff_point_id": 60001,
+      "dropoff_location_x": 1,
+      "dropoff_location_y": 11,
+      "dropoff_from": 360,
+      "dropoff_to": 1380,
+      "payment": 900
+    },
+    {
+      "order_id": 10002,
+      "pickup_point_id": 40002,
+      "pickup_location_x": 6,
+      "pickup_location_y": 4,
+      "pickup_from": 360,
+      "pickup_to": 1380,
+      "dropoff_point_id": 60002,
+      "dropoff_location_x": 10,
+      "dropoff_location_y": 10,
+      "dropoff_from": 360,
+      "dropoff_to": 1380,
+      "payment": 900
+    },
+    {
+      "order_id": 10003,
+      "pickup_point_id": 40003,
+      "pickup_location_x": 3,
+      "pickup_location_y": 12,
+      "pickup_from": 360,
+      "pickup_to": 1380,
+      "dropoff_point_id": 60003,
+      "dropoff_location_x": 11,
+      "dropoff_location_y": 16,
+      "dropoff_from": 360,
+      "dropoff_to": 1380,
+      "payment": 900
+    }
+  ]
+}
