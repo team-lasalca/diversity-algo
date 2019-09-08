@@ -3,7 +3,7 @@ import os
 from glob import glob
 
 child_processes = []
-for i, file in enumerate(glob("../cluster/*")):
+for i, file in enumerate(glob("../artemy_cluster/*")):
     print(file)
 
     command = ["python3", "or_tools.py", file, "../cluster_results/" + str(i) + ".json"]
@@ -23,9 +23,12 @@ for file in glob("../cluster_results/*"):
         continue
     
     command = ["python3", "join_json.py", first, file]
-    print(command)
     subprocess.run(command)
 
-    #os.remove(file)
+    os.remove(file)
 
 subprocess.run(["python3", "check.py", "../phystech-master/data/contest_input.json", first])
+print("=====================================")
+print("=====================================")
+print("=====================================")
+print(first)
